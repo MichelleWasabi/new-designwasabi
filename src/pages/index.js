@@ -17,18 +17,7 @@ function IndexPage() {
         title="Home"
       />
       <Hero />
-      <div className="body-content">
-        <h2>Hey</h2>
-        <h2>Hey</h2>
-        <h2 className="mb-12">Hey</h2>
-      </div>
-      <br />
-      <br />
-      <div id="body-features" className="body-content">
-        <h2 className="mt-12">Hey</h2>
-        <h2>Hey</h2>
-        <h2>Hey</h2>
-      </div>
+      <div className="landing-body"></div>
     </Layout>
   );
 }
