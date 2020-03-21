@@ -3,3 +3,12 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+body {
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
