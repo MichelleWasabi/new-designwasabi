@@ -1,4 +1,5 @@
 // See https://tailwindcss.com/docs/configuration for details
+
 module.exports = {
   theme: {
     fontSize: {
@@ -46,3 +47,5 @@ module.exports = {
   // https://github.com/tailwindcss/custom-forms
   plugins: [require("@tailwindcss/custom-forms")]
 };
+
+// #7cc9ae  green
