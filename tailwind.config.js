@@ -34,10 +34,12 @@ module.exports = {
       "90": ".9",
       "100": "1"
     },
-    spacing: {
-      "72": "18rem",
-      "84": "21rem",
-      "96": "24rem"
+    extend: {
+      spacing: {
+        "72": "18rem",
+        "84": "21rem",
+        "96": "24rem"
+      }
     }
   },
   variants: {},
