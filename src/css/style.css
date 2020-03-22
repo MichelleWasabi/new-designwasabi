@@ -4,11 +4,10 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
-body {
-  overflow: hidden;
+p {
+  font-size: 1.125rem;
 }
 
-main {
-  width: 100%;
-  overflow: hidden;
+h2 {
+  font-size: 1.875rem;
 }
