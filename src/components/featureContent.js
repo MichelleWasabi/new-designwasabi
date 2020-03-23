@@ -9,13 +9,13 @@ export default () => (
         <img
           src={require("../assets/abstract-vector.png")}
           alt=""
-          className="rounded-lg md:w-96"
+          className="rounded-lg md:w-96 xl:w-120"
         />
       </div>
       <div className="mt-4 md:mt-0 md:ml-6 text-center md:w-full leading-tight ">
         <h2>design solutions</h2>
         <p className="font-light">problem-solving for human happiness</p>
-        <ul className="mt-2 text-green-400">
+        <ul className="mt-2 text-leaf">
           <li>design thinking</li>
           <li>wireframes + prototypes</li>
           <li>design to code</li>
@@ -31,7 +31,7 @@ export default () => (
         <img
           src={require("../assets/wellness-vector.png")}
           alt=""
-          className="rounded-lg md:w-96"
+          className="rounded-lg md:w-96 xl:w-120"
         />
       </div>
       <div className="mt-4 md:mt-0 md:ml-6 text-center md:w-full leading-tight ">
@@ -39,7 +39,7 @@ export default () => (
         <p className="font-light mx-2">
           growth through self-discovery and healing
         </p>
-        <ul className="mt-2 text-blue-900">
+        <ul className="mt-2 text-sky">
           <li>individual therapy</li>
           <li>couples therapy</li>
           <li>mindfulness</li>
@@ -55,13 +55,13 @@ export default () => (
         <img
           src={require("../assets/office-vector.png")}
           alt=""
-          className="rounded-lg md:w-96"
+          className="rounded-lg md:w-96 xl:w-120"
         />
       </div>
       <div className="mt-4 md:mt-0 md:ml-6 text-center md:w-full leading-tight ">
         <h2>spaces</h2>
         <p className="font-light">affordable office space for rent</p>
-        <ul className="mt-2 text-yellow-500">
+        <ul className="mt-2 text-flower">
           <li>starting at $225</li>
           <li>fully furnished</li>
           <li>miami, fl</li>

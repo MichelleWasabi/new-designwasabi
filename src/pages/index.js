@@ -31,12 +31,12 @@ function IndexPage() {
             <img
               src={require("../assets/stacked-rocks.svg")}
               alt="vector rocks stacked on each other"
-              className="h-40 md:h-48"
+              className="h-40 md:h-48 lg:h-84"
             />
             <img
               src={require("../assets/wasabi-bowl-pink.svg")}
               alt="vector bowl in pink turned on it's side"
-              className="h-24 md:h-32 self-end"
+              className="h-24 md:h-32 lg:h-48 self-end"
             />
           </div>
           <div className="color-block h-6 bg-black opacity-90"></div>

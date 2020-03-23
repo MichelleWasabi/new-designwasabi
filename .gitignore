@@ -4,6 +4,7 @@
 node_modules
 yarn-error.log
 test.js
+notes
 
 # Build directory
 /public

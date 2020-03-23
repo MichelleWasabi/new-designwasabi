@@ -39,7 +39,16 @@ module.exports = {
       spacing: {
         "72": "18rem",
         "84": "21rem",
-        "96": "24rem"
+        "96": "24rem",
+        "120": "45rem"
+      },
+      colors: {
+        dkblue: "#0f2538",
+        blush: "#F3E2E4",
+        flower: "#C5466F",
+        leaf: "#4F8464",
+        sky: "#337EBF",
+        dkgray: "#19202D"
       }
     }
   },

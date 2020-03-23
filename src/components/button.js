@@ -4,7 +4,7 @@ let Button = ({
   title = "Try",
   children,
   onClick,
-  className = "bg-gray-900 hover:bg-pink-200 text-white hover:text-black font-bold py-2 px-24 rounded"
+  className = "bg-gray-900 hover:bg-pink-200 text-white hover:text-black font-bold py-3 px-20 rounded"
 }) => {
   return (
     <button className={className} onClick={onClick ? onClick : () => {}}>
