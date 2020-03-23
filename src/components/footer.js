@@ -20,23 +20,7 @@ function Footer() {
           {site.siteMetadata.title}
         </span>
       </Link>
-      {/* <nav className="flex justify-between max-w-md mx-auto p-4 md:p-8 text-sm">
-        <p className="text-white">
-          <a className="no-underline text-white" href="">
-            about
-          </a>
-        </p>
-        <p className="text-white">
-          <a className="no-underline text-white" href="">
-            blog
-          </a>
-        </p>
-        <p className="text-white">
-          <a className="no-underline text-white" href="">
-            contact
-          </a>
-        </p>
-      </nav> */}
+
       <nav className="flex px-8 py-6 xl:px-72 justify-center">
         {[
           {
@@ -66,31 +50,15 @@ function Footer() {
           }
         ].map(link => (
           <Link
-            className=" justify-between max-w-md mx-auto text-white"
+            className=" justify-between max-w-md mx-auto text-white hover:text-flower"
             key={link.title}
             to={link.route}
           >
             {link.title}
           </Link>
-
-          // <p className="text-white">
-          //   <a className="no-underline text-white" href="">
-          //     design
-          //   </a>
-          // </p>
-          // <p className="text-white">
-          //   <a className="no-underline text-white" href="">
-          //     wellness
-          //   </a>
-          // </p>
-          // <p className="text-white">
-          //   <a className="no-underline text-white" href="">
-          //     spaces
-          //   </a>
-          // </p>
         ))}
       </nav>
-      <div className="text-white text-center text-sm font-bold">
+      <div className="text-white text-center text-sm font-bold ">
         &copy; designWasabi 2020
       </div>
     </footer>

@@ -40,7 +40,7 @@ function Header() {
         <nav
           className={`${
             isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto text-right`}
+          } md:block md:flex md:items-center w-full md:w-auto text-right `}
         >
           {[
             {
@@ -65,7 +65,7 @@ function Header() {
             }
           ].map(link => (
             <Link
-              className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
+              className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white hover:text-flower"
               key={link.title}
               to={link.route}
             >
