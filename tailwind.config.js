@@ -49,6 +49,10 @@ module.exports = {
         leaf: "#4F8464",
         sky: "#337EBF",
         dkgray: "#19202D"
+      },
+      fontfamily: {
+        logo: "Jura, sans-serif",
+        logotwo: "Righteous, sans-serif"
       }
     }
   },

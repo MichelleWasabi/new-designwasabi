@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
+import "../css/style.css";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -18,7 +19,7 @@ function Header() {
       <div className="flex flex-wrap items-center justify-between max-w-6xl mx-auto p-4">
         <Link className="flex items-center no-underline text-white" to="/">
           <img src={require("../assets/cone.png")} className="h-8" alt="" />
-          <span className="font-bold text-xl tracking-tight hidden md:block">
+          <span className="font-bold text-xl tracking-tight hidden md:block logo-header">
             {site.siteMetadata.title}
           </span>
         </Link>

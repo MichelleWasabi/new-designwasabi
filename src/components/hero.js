@@ -17,7 +17,7 @@ export default () => (
       </video>
     </div>
     <section className="hero-content absolute text-white z-20 text-left mx-4 md:mx-10 leading-tight ">
-      <h1 className="text-4xl md:text-6xl  ">
+      <h1 className="text-4xl md:text-6xl tracking-tighter ">
         Design Beautifully <br /> Live Imperfectly <br /> Heal Thoroughly
       </h1>
       <p className="text-lg md:text-2xl mt-3">Services made for human needs</p>
