@@ -1,0 +1,36 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+p {
+  font-size: 1.125rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+@font-face {
+  font-family: "Jura";
+  src: url("../fonts/Jura.ttf");
+}
+@font-face {
+  font-family: "Righteous";
+  src: url("../fonts/Righteous.ttf");
+}
+@font-face {
+  font-family: "PT";
+  src: url("../fonts/PTSans-Regular.ttf");
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+header,
+footer,
+h2 {
+  font-family: "Righteous", sans-serif;
+}
