@@ -6,7 +6,7 @@ export default () => (
     <section>
       <div className="md:flex text-center md:text-left md:py-48 text-black">
         <div className="md:w-2/5   md:px-20  md:mx-12 md:leading-tight ">
-          <h1 className="text-3xl md:text-5xl">
+          <h1 className="text-3xl md:text-5xl mx-3 md:mx-0">
             To really know me, embrace a little wabi-sabi
           </h1>
         </div>

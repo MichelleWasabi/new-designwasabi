@@ -19,7 +19,7 @@ export default () => (
           />
         </div>
         <div className="mt-4 md:mt-0 md:mx-24 md:pl-16 leading-tight text-center md:text-left px-5">
-          <h2 className="text-flower mr-3">design to code</h2>
+          <h2 className="text-flower md:mr-3">design to code</h2>
           <p className="font-light mt-4 md:mt-6">
             Me + <span className="font-bold">Socially Conscious Brands</span>{" "}
             collaborate through early-stage ideas and the product growth cycle.
@@ -27,14 +27,20 @@ export default () => (
             journey, end-to-end.
           </p>
           <div className="my-12">
-            <BLink title="Schedule a FREE 15-min Consultation " />
+            <BLink title="Schedule a FREE 15-min Consultation" />
           </div>
         </div>
       </div>
       <div className="spacer h-20"></div>
       <div className="feature-content md:flex md:items-center h-108 md:h-auto">
         <div className="md:flex-shrink-0 md:order-2 ">
-          <video autoPlay muted loop className="md:w-96 xl:w-120">
+          <video
+            poster={require("../assets/abstract-vector.png")}
+            autoPlay
+            muted
+            loop
+            className="md:w-96 xl:w-120"
+          >
             <source
               src={require("../assets/website-ver2.mp4")}
               type="video/mp4"
@@ -44,8 +50,8 @@ export default () => (
         </div>
 
         <div className="mt-4 md:mt-0 md:mx-24 md:pl-16 md:w-full leading-tight text-center md:text-left ">
-          <h2 className="text-flower mr-3 ">
-            design skills anchored in psychology and human behavior studies
+          <h2 className="text-flower md:mr-3 ">
+            product design anchored in psychology and human behavior
           </h2>
           <ul className="mt-2 text-lg mt-4 md:mt-6">
             <li>Anticipatory design thinking</li>
@@ -69,7 +75,7 @@ export default () => (
           />
         </div>
         <div className="mt-4 md:mt-0 md:mx-24 md:pl-16 md:w-full leading-tight text-center md:text-left ">
-          <h2 className="text-flower mr-3">mental and emotional healing</h2>
+          <h2 className="text-flower md:mr-3">mental and emotional healing</h2>
           <ul className="mt-2 text-lg mt-4 md:mt-6">
             <li>Individual therapy + self-discovery</li>
             <li>Couples therapy + communication skills </li>

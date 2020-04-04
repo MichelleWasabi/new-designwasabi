@@ -16,14 +16,14 @@ function Header() {
 
   return (
     <header className="bg-black opacity-90 sticky top-0">
-      <div className="flex flex-wrap items-center justify-between max-w-6xl mx-auto p-4">
+      <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link className="flex items-center no-underline text-white" to="/">
           <img
             src={require("../assets/mwlogo.png")}
             className="h-5 mr-3"
             alt=""
           />
-          <span className="font-bold text-xl tracking-normal hidden md:block logo-header">
+          <span className="text-md md:text-xl tracking-normal logo-header">
             {site.siteMetadata.title}
           </span>
         </Link>
@@ -50,17 +50,17 @@ function Header() {
           {[
             {
               route: `/about`,
-              title: `about`
+              title: `about`,
             },
             {
               route: `/blog`,
-              title: `blog`
+              title: `blog`,
             },
             {
               route: `/contact`,
-              title: `contact`
-            }
-          ].map(link => (
+              title: `contact`,
+            },
+          ].map((link) => (
             <Link
               className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white hover:text-flower"
               key={link.title}
