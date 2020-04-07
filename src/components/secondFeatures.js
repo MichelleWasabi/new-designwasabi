@@ -13,7 +13,7 @@ export default () => (
       <div className="feature-content md:flex md:items-center  h-108 md:h-auto">
         <div className="md:flex-shrink-0">
           <img
-            src={require("../images/michelle1.jpeg")}
+            src={require("../assets/images/michelle1.jpeg")}
             alt=""
             className="md:w-96 xl:w-120"
           />
@@ -35,14 +35,14 @@ export default () => (
       <div className="feature-content md:flex md:items-center h-108 md:h-auto">
         <div className="md:flex-shrink-0 md:order-2 ">
           <video
-            poster={require("../assets/abstract-vector.png")}
+            poster={require("../assets/icons/abstract-vector.png")}
             autoPlay
             muted
             loop
             className="md:w-96 xl:w-120"
           >
             <source
-              src={require("../assets/website-ver2.mp4")}
+              src={require("../assets/videos/website-ver2.mp4")}
               type="video/mp4"
               className=""
             />
@@ -69,7 +69,7 @@ export default () => (
       <div className="feature-content md:flex md:items-center  h-108 md:h-auto">
         <div className="md:flex-shrink-0">
           <img
-            src={require("../images/michelle3.png")}
+            src={require("../assets/images/michelle3.png")}
             alt=""
             className="md:w-96 xl:w-120"
           />

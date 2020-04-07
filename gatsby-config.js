@@ -16,7 +16,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/assets/mwlogo.png`,
+        icon: `src/assets/icons/mwlogo.png`,
       },
     },
     {

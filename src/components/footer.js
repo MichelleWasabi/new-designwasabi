@@ -16,7 +16,7 @@ function Footer() {
     <footer className="bg-dkblue py-6 md:py-12">
       <Link className="flex justify-center no-underline text-white" to="/">
         <img
-          src={require("../assets/mwlogo.png")}
+          src={require("../assets/icons/mwlogo.png")}
           className="h-5 mr-3"
           alt=""
         />

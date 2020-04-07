@@ -19,7 +19,7 @@ function Header() {
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link className="flex items-center no-underline text-white" to="/">
           <img
-            src={require("../assets/mwlogo.png")}
+            src={require("../assets/icons/mwlogo.png")}
             className="h-5 mr-3"
             alt=""
           />

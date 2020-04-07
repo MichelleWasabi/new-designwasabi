@@ -7,7 +7,7 @@ export default () => (
     <div className="hero-img">
       {/* <div className="overlay bg-gray-800 absolute top-0 left-0 h-full w-full opacity-50 z-10"></div> */}
       <img
-        src={require("../images/gradientSky-edit.jpeg")}
+        src={require("../assets/images/gradientSky-edit.jpeg")}
         alt=""
         className="h-96 md:h-auto"
       />
