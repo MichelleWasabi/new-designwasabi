@@ -1,5 +1,5 @@
 import React from "react";
-import BLink from "./BLink";
+import BtnLink from "./BtnLink";
 
 export default () => (
   <div>
@@ -21,7 +21,7 @@ export default () => (
             If that sounds interesting to you then let’s collaborate together.{" "}
           </p>
           <div className="pt-12">
-            <BLink title="Talk to Me" href="./contact" />
+            <BtnLink title="Talk to Me" href="./contact" />
           </div>
         </div>
       </div>

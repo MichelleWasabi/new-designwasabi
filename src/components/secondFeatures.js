@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/style.css";
-import BLink from "./BLink";
+import BtnLink from "./BtnLink";
 import ByDay from "./byDay";
 
 export default () => (
@@ -26,8 +26,12 @@ export default () => (
             Together, we craft beautiful products that anticipate your user’s
             journey, end-to-end.
           </p>
-          <div className="my-12">
-            <BLink title="Schedule a FREE 15-min Consultation" />
+          <BtnLink title="Schedule FREE Consultation" />
+
+          <div className="btn-subtext-3">
+            <small className="text-flower font-bold uppercase ">
+              15-minute Call{" "}
+            </small>
           </div>
         </div>
       </div>
@@ -75,15 +79,19 @@ export default () => (
           />
         </div>
         <div className="mt-4 md:mt-0 md:mx-24 md:pl-16 md:w-full leading-tight text-center md:text-left ">
-          <h2 className="text-flower md:mr-3">mental and emotional healing</h2>
+          <h2 className="text-flower">mental and emotional</h2>
           <ul className="mt-2 text-lg mt-4 md:mt-6">
             <li>Individual therapy + self-discovery</li>
             <li>Couples therapy + communication skills </li>
             <li>Clairvoyance through mindfulness practices</li>
           </ul>
 
-          <div className="mt-12">
-            <BLink title="Schedule a FREE 15-min Consultation" />
+          <BtnLink title="Schedule FREE Consultation" />
+
+          <div className="btn-subtext">
+            <small className="text-flower font-bold uppercase ">
+              15-minute Call{" "}
+            </small>
           </div>
         </div>
       </div>

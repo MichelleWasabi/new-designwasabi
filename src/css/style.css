@@ -34,3 +34,7 @@ footer,
 h2 {
   font-family: "Righteous", sans-serif;
 }
+
+.width-fit {
+  width: fit-content;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/style.css";
-import BLink from "./BLink";
+import BtnLink from "./BtnLink";
 
 export default () => (
   <div className="hero flex relative items-center">
@@ -22,7 +22,7 @@ export default () => (
       </h1>
       <p className="text-lg md:text-2xl mt-3">Services made for human needs</p>
       <div className="pt-6">
-        <BLink title="Start Living" href="./#landing-features" />
+        <BtnLink title="Start Living" href="./#landing-features" />
         {/* <a
           href="/#landing-features"
           className="btn bg-gray-900 hover:bg-pink-200 text-white hover:text-black font-bold py-2 px-16 rounded"

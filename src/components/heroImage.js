@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/style.css";
-import BLink from "./BLink";
+import BtnLink from "./BtnLink";
 
 export default () => (
   <div className="hero flex relative items-center">
@@ -23,7 +23,7 @@ export default () => (
         I turn human problems into beautiful solutions.
       </p>
       <div className="pt-6">
-        <BLink href="./#landing-features" />
+        <BtnLink href="./#landing-features" />
       </div>
     </section>
   </div>

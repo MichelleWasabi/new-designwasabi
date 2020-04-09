@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/style.css";
-import BLink from "./BLink";
+import BtnLink from "./BtnLink";
 
 export default () => (
   <div>
@@ -21,7 +21,7 @@ export default () => (
           <li>design to code</li>
         </ul>
         <div className="my-6">
-          <BLink title="Let's Problem Solve" />
+          <BtnLink title="Let's Problem Solve" />
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ export default () => (
           <li>mindfulness</li>
         </ul>
         <div className="my-6">
-          <BLink title="Let's Heal" />
+          <BtnLink title="Let's Heal" />
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@ export default () => (
           <li>miami, fl</li>
         </ul>
         <div className="my-6">
-          <BLink title="Start Renting" />
+          <BtnLink title="Start Renting" />
         </div>
       </div>
     </div>
