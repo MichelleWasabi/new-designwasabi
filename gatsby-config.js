@@ -20,6 +20,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.svg$/,
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-postcss",
       options: {
         postCssPlugins: [
@@ -37,5 +45,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    // `gatsby-plugin-react-svg`,
   ],
 };
