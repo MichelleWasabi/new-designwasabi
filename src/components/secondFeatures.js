@@ -26,7 +26,10 @@ export default () => (
             Together, we craft beautiful products that anticipate your user’s
             journey, end-to-end.
           </p>
-          <BtnLink title="Schedule FREE Consultation" />
+          <BtnLink
+            title="Schedule FREE Consultation"
+            href="https://calendly.com/michellewiltshire/15-minute-consultation"
+          />
 
           <div className="btn-subtext-3">
             <small className="text-flower font-bold uppercase ">
@@ -86,11 +89,14 @@ export default () => (
             <li>Clairvoyance through mindfulness practices</li>
           </ul>
 
-          <BtnLink title="Schedule FREE Consultation" />
+          <BtnLink
+            title="Email Me"
+            href="mailto: contact@wasabisabipsych.com?subject=Wellness%20Inquiry"
+          />
 
           <div className="btn-subtext">
             <small className="text-flower font-bold uppercase ">
-              15-minute Call{" "}
+              Schedule FREE 15-minute Call{" "}
             </small>
           </div>
         </div>
