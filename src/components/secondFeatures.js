@@ -70,7 +70,8 @@ export default () => (
           </ul>
         </div>
       </div>
-      <div className="bg-dkblue text-white">
+      {/* <div className="bg-dkblue text-white"> */}
+      <div className="byDay">
         <ByDay title1="by night" title2="Licensed Psychologist" />
       </div>
 
