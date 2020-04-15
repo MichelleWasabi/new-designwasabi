@@ -2,6 +2,7 @@ import React from "react";
 import "../css/style.css";
 import BtnLink from "./BtnLink";
 import ByDay from "./byDay";
+// import SunBkg from "../assets/icons/SunBkg.svg";
 
 export default () => (
   <div>
