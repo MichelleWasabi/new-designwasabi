@@ -3,8 +3,8 @@ import BtnLink from "./BtnLink";
 
 export default () => (
   <div>
-    <section className="bg-red-500 py-12 md:py-0">
-      <div className="md:flex text-center md:text-left md:py-48 text-white">
+    <section className="py-12 md:py-0">
+      <div className="md:flex text-center md:text-left md:py-48">
         <div className="md:w-2/5   md:px-20  md:mx-12 md:leading-tight ">
           <h1 className="text-3xl md:text-5xl mx-3 md:mx-0">
             To really know me, embrace a little wabi-sabi
