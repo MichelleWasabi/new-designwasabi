@@ -18,9 +18,7 @@ export default () => (
               welcomed.
               <br /> Holistic problem solver.
             </h3>
-            <p className="pt-6 pr-40">
-              Sound interests? Then let’s collaborate!{" "}
-            </p>
+            <p className="pt-6 pr-40">Interested? Then let’s collaborate! </p>
           </div>
           <div className="pt-12">
             <BtnLink title="Talk to Me" href="./contact" />
