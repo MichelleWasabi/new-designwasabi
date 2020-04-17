@@ -1,7 +1,7 @@
 import React from "react";
 // import "../css/style.css";
 // import SunBkg from "../assets/icons/SunBkg.svg";
-// import SunDance from "../components/SunDance";
+import SunDance from "../components/SunDance";
 
 let ByDay = ({
   title1 = "Learn More",
@@ -22,7 +22,7 @@ let ByDay = ({
       </div>
       <div>
         {/* <SunBkg /> */}
-        {/* <SunDance /> */}
+        <SunDance />
       </div>
     </div>
   );

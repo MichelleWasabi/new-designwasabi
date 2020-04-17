@@ -1,40 +1,42 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import SunIcon from "../assets/icons/SunIcon.svg";
+import Mountains from "../assets/icons/Mountains.svg";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
 export default () => {
   gsap.registerPlugin(MotionPathPlugin);
   const tween = () => {
-    gsap.from(".sun", {
-      duration: 9,
-      ease: "circ.in",
+    gsap.to(".sun", {
+      duration: 10,
+      ease: "back.out(1)",
       autoAlpha: 1,
       motionPath: {
-        path: "#Stroke-88",
-        align: "#Stroke-88",
+        path: "#top-circle",
+        align: "#top-circle",
         autoRotate: 10,
         alignOrigin: [0.5, 0.5],
       },
     });
+    gsap.to(".sun", { delay: 1, duration: 3,  scale: 0.7 });
+    gsap.from(".mountains", {delay: 3, y: 300, scaleY: .1, autoAlpha: 0,});
+    gsap.to(".mountains", { duration: 4, ease: "bounce.out", y: 10, scaleY: 1.3,autoAlpha: 1});
 
-    gsap.to(".sun", { delay: 6, duration: 2, display: "none", scale: 0.7 });
+    // display: "none",
+    // gsap.to("mountains", {duration: 6, })
   };
+  
 
   useEffect(() => {
-    tween();
+    tween()
   });
 
   return (
     <div className="container">
-      <svg width="650px" height="650px" viewBox="0 0 700 700" id="svg">
-        {/* <path
-          id="path"
-          d="M578.492965,327.930376 C560.082575,470.55421 438.048671,580.894 290.447,580.894 C130.145,580.894 1.13686838e-13,450.749 1.13686838e-13,290.447 C1.13686838e-13,130.145 130.145,1.13686838e-13 290.447,1.13686838e-13 C437.307183,1.13686838e-13 558.855837,109.233975 578.207672,250.816635"
-          fill="none"
-          stroke="none"
-        /> */}
-          <path d="M-6.25277607e-13,246.174 C20.8706,106.853 138.6794,4.40536496e-13 280.6964,4.40536496e-13 C344.5054,4.40536496e-13 403.4274,21.571 450.8654,57.966" id="Stroke-88"/>
+      <svg width="650px" height="650px" viewBox="0 0 650 650" id="svg">
+       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="20,50">
+        <path d="M570,287 C570,129.598846 442.401154,2 285,2 C127.598846,2 0,129.598846 0,287" id="top-circle" stroke="#000000" stroke-width="3"></path>
+    </g>  
         <g
           className="sun"
           transform="translate(498.952481, 79.180856)"
@@ -42,7 +44,16 @@ export default () => {
         >
           <SunIcon />
         </g>
-        <g></g>
+        <g
+          className="mountains"
+          transform="translate(-50.8000, -160.180856)"
+          fill="none"
+        >
+          <Mountains />
+        </g>
+       
+
+
       </svg>
     </div>
   );
