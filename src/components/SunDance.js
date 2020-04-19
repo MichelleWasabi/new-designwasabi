@@ -8,22 +8,20 @@ export default () => {
   gsap.registerPlugin(MotionPathPlugin);
   const tween = () => {
     gsap.to(".sun", {
-      duration: 10,
+      duration: 18,
       ease: "back.out(1)",
       autoAlpha: 1,
       motionPath: {
         path: "#top-circle",
         align: "#top-circle",
-        autoRotate: 10,
+        autoRotate: 20,
         alignOrigin: [0.5, 0.5],
       },
     });
-    gsap.to(".sun", { delay: 1, duration: 3,  scale: 0.7 });
-    gsap.from(".mountains", {delay: 3, y: 300, scaleY: .1, autoAlpha: 0,});
-    gsap.to(".mountains", { duration: 4, ease: "bounce.out", y: 10, scaleY: 1.3,autoAlpha: 1});
-
-    // display: "none",
-    // gsap.to("mountains", {duration: 6, })
+    gsap.to(".sun", { delay: 6, duration: 2,  scale: 0.7, autoAlpha: 0 });
+    gsap.to(".sun", { delay: 7, display: "none" });
+    gsap.from(".mountains", { y: 300, scaleY: .1, autoAlpha: 0});
+    gsap.to(".mountains", { duration: 3, ease: "bounce.out", y: 50, scaleY: 1, autoAlpha: 1});
   };
   
 
@@ -34,8 +32,8 @@ export default () => {
   return (
     <div className="container">
       <svg width="650px" height="650px" viewBox="0 0 650 650" id="svg">
-       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="20,50">
-        <path d="M570,287 C570,129.598846 442.401154,2 285,2 C127.598846,2 0,129.598846 0,287" id="top-circle" stroke="#000000" stroke-width="3"></path>
+       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeDasharray="20,50">
+        <path d="M570,287 C570,129.598846 442.401154,2 285,2 C127.598846,2 0,129.598846 0,287" id="top-circle" stroke="#000000" strokeWidth="3"></path>
     </g>  
         <g
           className="sun"
@@ -46,7 +44,8 @@ export default () => {
         </g>
         <g
           className="mountains"
-          transform="translate(-50.8000, -160.180856)"
+          // transform="translate(-50.8000, -160.180856)"
+          //  transform='translate(295 115)'
           fill="none"
         >
           <Mountains />
