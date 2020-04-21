@@ -35,7 +35,7 @@ export default () => {
 
   return (
     <div className="container">
-      <svg width="600px" height="600px" viewBox="-100 0 770 450" id="svg">
+      <svg width="1150px" height="500px" viewBox="-100 -10 900 500" id="svg">
         <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeDasharray="20,50">
         <path d="M611,285 C611,127.598846 483.401154,0 326,0 C168.598846,0 41,127.598846 41,285" id="top-circle" stroke="none" strokeWidth="3" strokeDasharray="20,50" transform="translate(0, 50)"></path>
     </g>  
