@@ -10,21 +10,24 @@ export default () => {
     gsap.to("#sun", {
       duration: 18,
       ease: "back.out(1)",
+      scale: 0.8,
       autoAlpha: 1,
       motionPath: {
         path: "#top-circle",
         align: "#top-circle",
-        autoRotate: 20,
+        // autoRotate: -10,
         alignOrigin: [0.5, 0.5],
       },
     });
     
-    gsap.to("#sun", { delay: 6, duration: 2,  scale: 0.7, autoAlpha: 0 });
-    gsap.to("#sun", { delay: 7, display: "none" });
+    // gsap.to("#sun", { delay: 7, duration: 2,  scale: 0.7 });
+    // gsap.to("#sun", { delay: 7,  duration: 8, rotate: 360, repeat: -1, ease:"Linear.easeNone "});
+    gsap.fromTo("#sun", {rotation: 0},{ rotation: 360, duration: 20, repeat: -1, ease: "linear"
+    },0);
     gsap.from(".mountains", { y: 300, scaleY: .1, autoAlpha: 0});
     gsap.to(".mountains", { duration: 3, ease: "bounce.out", y: 50, scaleY: 1, autoAlpha: 1});
-    gsap.to("#cloud1", {duration: 5, x: 220, repeat: 5, yoyo: true, ease: "none"});
-    gsap.from("#cloud2", {duration: 8, x: 120, repeat: 5, yoyo: true, ease: "none"});
+    gsap.to("#cloud1", {duration: 5, x: 220, repeat: -1, yoyo: true, ease: "none"});
+    gsap.from("#cloud2", {duration: 10, x: 120, repeat: -1, yoyo: true, ease: "none"});
     
   };
   
