@@ -11,7 +11,7 @@ export default () => (
     </div>
 
     <section id="landing-features">
-      <div className="feature-content md:flex md:items-center  h-108 md:h-auto">
+      <div className="feature-content md:flex md:items-center h-108 md:h-auto">
         <div className="md:flex-shrink-0">
           <img
             src={require("../assets/images/michelle1.jpeg")}
@@ -70,7 +70,7 @@ export default () => (
           </ul>
         </div>
       </div>
-      {/* <div className="bg-dkblue text-white"> */}
+       <div className="spacer h-20"></div>
       <div className="byDay">
         <ByDay title1="by night" title2="Licensed Psychologist" moon={<MoonDance2/>} />
       </div>
