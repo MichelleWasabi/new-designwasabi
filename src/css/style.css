@@ -38,3 +38,13 @@ h2 {
 .width-fit {
   width: fit-content;
 }
+
+
+.moon {
+  /* transform: rotate(15deg); */
+}
+
+.feature-content main video,
+.feature-content main img {
+  border: 2px solid #333;
+}

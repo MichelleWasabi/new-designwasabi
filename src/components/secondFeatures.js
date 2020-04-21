@@ -2,12 +2,12 @@ import React from "react";
 import "../css/style.css";
 import BtnLink from "./BtnLink";
 import ByDay from "./byDay";
-// import SunBkg from "../assets/icons/SunBkg.svg";
-
+import SunDance2 from "../components/SunDance2";
+import MoonDance2 from "./MoonDance2";
 export default () => (
   <div>
     <div className="byDay">
-      <ByDay title1="by day" title2="Full Stack Product Designer" />
+      <ByDay title1="by day" title2="Full Stack Product Designer"  sun={<SunDance2/>}/>
     </div>
 
     <section id="landing-features">
@@ -72,7 +72,7 @@ export default () => (
       </div>
       {/* <div className="bg-dkblue text-white"> */}
       <div className="byDay">
-        <ByDay title1="by night" title2="Licensed Psychologist" />
+        <ByDay title1="by night" title2="Licensed Psychologist" moon={<MoonDance2/>} />
       </div>
 
       <div className="feature-content md:flex md:items-center  h-108 md:h-auto">
