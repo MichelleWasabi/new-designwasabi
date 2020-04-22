@@ -40,7 +40,7 @@ export default () => {
 
   return (
     <div className="container">
-      <svg width="1150px" height="500px" viewBox="-80 65 900 500" id="svg" className="w-full">
+      <svg width="1150px" height="500px" viewBox="-80 65 900 500" id="svg" className="w-full md:w-auto">
        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeDasharray="20,50">
         <path d="M586.917077,555.306304 C555.138907,432.588665 443.653203,341.959828 311,341.959828 C209.27956,341.959828 120.005714,395.250032 69.5736309,475.435273" id="bottom-circle" stroke="#000000" strokeWidth="3" strokeDasharray="20,50" transform="translate(328.245354, 448.633066) scale(1, -1) translate(-328.245354, -448.633066) "></path>
 
