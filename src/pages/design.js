@@ -32,12 +32,17 @@ function DesignPage() {
     <div className="grid grid-cols-2 gap-8">
       {[0,1].map((i) => (
         <a key={i} className="relative mx-auto block">
-          <div className="content z-30 opacity-0 absolute text-white h-full w-full text-center items-center flex  justify-center flex-col ">
-            <div className="details absolute w-full fadeIn-bottom opacity-0">
+          <div className="content z-30 opacity-0 absolute text-white h-full w-full text-center items-center flex justify-center flex-col transition-all duration-1000 ease-in-out hover:opacity-100  ">
+            
+            
+            
+            <div className="details absolute w-full fadeIn-bottom opacity-0 transition-all duration-1000 ease-in-out">
               <h3 className="title uppercase">Title of the Project Here</h3>
               <p className="text">Brief description of the project</p>
             </div>
           </div>
+
+
           <img className="w-full max-w-lg" src={require("../assets/images/michelle1.jpeg")} alt="" />
         </a>
       ))}

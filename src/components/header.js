@@ -15,7 +15,7 @@ function Header() {
   `);
 
   return (
-    <header className="bg-black opacity-90 sticky top-0 z-10">
+    <header className="bg-black opacity-90 sticky top-0">
       <div className="container mx-auto flex flex-wrap items-center justify-between mx-auto p-4">
         <Link className="flex items-center no-underline text-white" to="/">
           <img
