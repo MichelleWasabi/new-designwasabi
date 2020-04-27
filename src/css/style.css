@@ -12,6 +12,12 @@ h2 {
   font-size: 1.875rem;
 }
 
+h3 {
+  font-size: 1.55rem;
+}
+
+
+
 @font-face {
   font-family: "Jura";
   src: url("../fonts/Jura.ttf");
@@ -36,8 +42,13 @@ h2 {
 }
 
 /* .container {
-  padding: 0 3rem;
-} */
+  padding: 1rem 10rem;
+}  */
+
+.dkGradient {
+  background: linear-gradient(to right, #000000c7 0%, #ffffff1f 100%)
+}
+
 .width-fit {
   width: fit-content;
 }
@@ -53,6 +64,11 @@ h2 {
   opacity: 1;
 }
 
+.content:hover .details-link {
+  top: 85%;
+  opacity: 1;
+}
+
 .fadeIn-bottom {
   top: 90%;
 }
@@ -64,4 +80,93 @@ h2 {
 .content:hover {
   background: rgba(0,0,0,0.7);
 }
+.content-link:hover {
+  background: rgba(0,0,0,0.7);
+}
 
+/* HERO */
+
+/* .hero-section {
+  background: url(../video/video-hero/hero-image-blurry.jpg) center center
+    no-repeat scroll;
+  background-size: cover;
+  padding: 0 0 4.5em;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-section::before,
+.video-tour::before,
+.pricing::before,
+.twitter-feed::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-section::before {
+  background: rgba(0, 0, 0, 0.3);
+} */
+
+.welcome-message {
+  margin-top: 4.5em;
+}
+
+.welcome-message h1 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 800;
+  margin: 0 0 24px;
+}
+
+.welcome-message h2 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+}
+
+.welcome-message p {
+  font-size: 16px;
+  line-height: 1.8rem;
+}
+
+.btn {
+  padding: 0.5em 1.5em;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f56363;
+  line-height: 1.5;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #fa5454;
+}
+
+.btn:active,
+.btn:focus,
+.btn:active:hover,
+.btn:active:focus {
+  color: #fff;
+  outline: none;
+  background-color: #fa5454;
+}
+
+.cta-btn p {
+  color: #fff;
+  margin: 0.75em 0 0;
+  font-size: 18px;
+}

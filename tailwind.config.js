@@ -2,6 +2,14 @@
 
 module.exports = {
   theme: {
+    container: {
+      padding: {
+        default: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "10rem",
+      },
+    },
     fontSize: {
       xs: ".75rem",
       sm: ".875rem",
@@ -50,7 +58,7 @@ module.exports = {
         flowerLight: "#e8b6c7",
         leaf: "#4F8464",
         sky: "#337EBF",
-        dkgray: "#19202D"
+        dkgray: "#19202D",
       },
       fontfamily: {
         logo: "Jura, sans-serif",
