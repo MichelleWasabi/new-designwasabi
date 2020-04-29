@@ -16,15 +16,17 @@ function DesignPage() {
      <ImgTiles tiles={[
        {
          header: "MediXall: Health App",
-         subtext: "an App designed to improve access to better healthcare",
-         tagleft: "UX Design",
-         tagright: "Front-End"
+         subtext: "designed to improve access to better healthcare",
+         tagleft: "Product Design",
+         tagright: "UX Research",
+         src: require("../assets/images/wellness.png"),
        },
        { 
          header: "TAPPI: Therapist Directory",
          subtext: "built from the ground up in React with Headless WordPress",
-         tagleft: "UI Design",
-         tagright: "Research"
+         tagleft: "React/Front-end",
+         tagright: "Visual Design",
+         src: require("../assets/images/taapi2.png"),
         },
        { 
          header: "4",

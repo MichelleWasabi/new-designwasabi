@@ -1,73 +1,42 @@
 import React from "react";
 import "../css/style.css";
 
-export default () => (
-  <section className="featureWrapper text-center my-48 ">
-    <h2 className="text-xl md:text-4xl">Our Features</h2>
-    <div className="contentWrapper flex mt-24">
-      <div className="feature-one w-1/3 px-16 ">
-        <div className="feature-icon flex justify-center  ">
+let FirstFeatures = ({
+header = "Our Features", 
+children,
+feature,
+}) => {
+  return(
+<section className="featureWrapper text-center my-12 md:my-48 ">
+    <h2 className="header-text">{children ? children : header}</h2>
+    <div  className=" md:flex md:mt-24 text-center">
+      {feature.map(({title, content}) => (
+    <div key={title} className="feature-one md:w-1/3 px-16">
+      <div  className="feature-icon flex justify-center ">
           <img
             className="h-24 "
-            src={require("../images/icon-booking-works.png")}
+            src={require("../assets/images/icon-booking-works.png")}
             alt=""
           />
         </div>
-        <div className="feature-content my-6 ">
+        <div  className="feature-content my-6 ">
           <div className="title">
             <h2 className="text-xl md:text-2xl tracking-tighter">
-              Feature Title
+             {title}
             </h2>
           </div>
           <div className="subtext">
             <p>
-              Some additional information about this feature to explain further.{" "}
+              {content}
             </p>
           </div>
         </div>
       </div>
-      <div className="feature-two w-1/3 px-16">
-        <div className="feature-icon flex justify-center">
-          <img
-            className="h-24 "
-            src={require("../images/icon-booking-works.png")}
-            alt=""
-          />
-        </div>
-        <div className="feature-content my-6 ">
-          <div className="title">
-            <h2 className="text-xl md:text-2xl tracking-tighter">
-              Feature Title
-            </h2>
-          </div>
-          <div className="subtext">
-            <p>
-              Some additional information about this feature to explain further.{" "}
-            </p>
-          </div>
-        </div>
+        ))}  
       </div>
-      <div className="feature-three w-1/3 px-16">
-        <div className="feature-icon flex justify-center">
-          <img
-            className="h-24 "
-            src={require("../images/icon-booking-works.png")}
-            alt=""
-          />
-        </div>
-        <div className="feature-content my-6 ">
-          <div className="title">
-            <h2 className="text-xl md:text-2xl tracking-tighter">
-              Feature Title
-            </h2>
-          </div>
-          <div className="subtext">
-            <p>
-              Some additional information about this feature to explain further.{" "}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </section>
-);
+  );
+};
+
+export default FirstFeatures;

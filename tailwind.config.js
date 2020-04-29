@@ -2,14 +2,15 @@
 
 module.exports = {
   theme: {
-    container: {
-      padding: {
-        default: "1rem",
-        sm: "2rem",
-        lg: "4rem",
-        xl: "10rem",
-      },
-    },
+    container: false,
+    // container: {
+    //   padding: {
+    //     default: "1rem",
+    //     sm: "2rem",
+    //     lg: "4rem",
+    //     xl: "10rem",
+    //   },
+    // },
     fontSize: {
       xs: ".75rem",
       sm: ".875rem",

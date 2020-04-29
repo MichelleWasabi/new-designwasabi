@@ -60,7 +60,7 @@ h2 {
 
 
 .content:hover .details {
-  top: 30%;
+  top: 35%;
   opacity: 1;
 }
 
@@ -78,10 +78,7 @@ h2 {
 }
 
 .content:hover {
-  background: rgba(0,0,0,0.7);
-}
-.content-link:hover {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.5);
 }
 
 /* HERO */
@@ -169,4 +166,14 @@ h2 {
   color: #fff;
   margin: 0.75em 0 0;
   font-size: 18px;
+}
+
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
 }
