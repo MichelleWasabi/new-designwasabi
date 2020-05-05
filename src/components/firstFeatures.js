@@ -2,7 +2,7 @@ import React from "react";
 import "../css/style.css";
 
 let FirstFeatures = ({
-header = "Our Features", 
+header, 
 children,
 feature,
 }) => {
