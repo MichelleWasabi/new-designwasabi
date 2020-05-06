@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import FirstFeatures from "../components/firstFeatures";
-// import BtnLink from "../components/BtnLink";
+import BtnCenter from "../components/BtnCenter";
 
 import LastCTA from "../components/lastCTA";
 
@@ -15,26 +15,52 @@ function Posts() {
       />
 
       {/* post-hero  */}
+      <div className="hero flex relative items-center justify-center text-center ">
+        <div>
+          {/* <div className="overlay bg-gray-800 absolute top-0 left-0 h-full w-full opacity-50 z-10"></div> */}
+          <img
+            src="https://images.unsplash.com/photo-1576502202167-791eca35a78d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1520&q=80"
+            alt=""
+            className="h-screen w-full"
+          />
+        </div>
+        <section className="hero-content absolute text-white z-20 mx-4 md:mx-10 leading-tight ">
+          <p className=" text-4xl opacity-80">a case study</p>
+          <h1 className="hero-font-size tracking-tighter ">Wellness App</h1>
+          <div className="pt-6 md:mx-0 ">
+            <BtnCenter title="Learn More" href="#post-features" />
+          </div>
+        </section>
+      </div>
       <section>
-        <img src={require("../assets/images/healthcare-hero.jpg")} alt="" />
+        <div class="back-btn mx-3 md:mx-6">
+        <a class="text-teal-600 mx-12 text-xl " href="javascript:history.back()"> <img src={require("../assets/icons/back-arrow.png")} className="w-8 h-full" alt=""/> Back</a>
+      </div>
       </section>
 
-      <div className="container mx-auto px-6 md:px-32">
+      <div id="post-features" className="container mx-auto px-6 md:px-32">
         {/* post-features - enter the role, type of project here   */}
+        {/* line icons used from this site: https://lineicons.com/icons/ */}
         <FirstFeatures
           header="At a Glance"
           feature={[
             {
               title: "My Role ",
               content: "Lead Designer and Researcher",
+              src: require("../assets/icons/myrole.png"),
+              imgClass: "h-12 md:h-16",
             },
             {
               title: "Project Length",
               content: "Six (6) Months",
+              src: require("../assets/icons/duration.png"),
+              imgClass: "h-12 md:h-16 ",
             },
             {
               title: "# of Iterations",
               content: "Three (3) Iterations",
+              src: require("../assets/icons/iterations.png"),
+              imgClass: "h-12 md:h-16",
             },
           ]}
         />
@@ -54,7 +80,7 @@ function Posts() {
               scratching their heads and ultimately vulnerable to the elements.
             </p>
             <img
-              className="mx-auto md:w-96 my-6 md:my-20"
+              className="mx-auto md:w-96 my-6 md:my-20 rounded"
               src={require("../assets/images/xray.jpg")}
               alt=""
             />
@@ -90,7 +116,7 @@ function Posts() {
               resources, I anticipated our audience would likely resemble the
               following demographic:
             </p>
-            <div className=" mx-auto md:w-96 my-6 md:my-12 flex justify-center">
+            <div className=" mx-auto md:w-96 md:my-12 flex justify-center">
               <iframe
                 src="https://giphy.com/embed/3oge7Ve0gmIOhJkhOg"
                 width="480"
@@ -106,7 +132,7 @@ function Posts() {
               </p>
             </div>
 
-            <ul className="max-w-96 md:my-12 text-xl list-inside list-disc grid justify-center text-teal-600">
+            <ul className="max-w-96 my-6 md:my-12 text-xl list-inside list-disc grid justify-center text-teal-600">
               <li>Ages: 26 - 45</li>
               <li>Technologically inclined</li>
               <li> Low to Mid Income</li>
@@ -129,9 +155,46 @@ function Posts() {
 
         {/* post-banner that displays the steps taken for this project  */}
         <section className="post-intro my-12">
-          <div className="banner bg-gray-200 h-56 md:h-120 full-width grid content-center px-12">
-            <h2 className="text-center mb-12">Project Steps</h2>
-            <img src={require("../assets/icons/steps-taken.png")} alt="" />
+          <div className="banner bg-gray-200 md:h-120 full-width grid content-center px-3 md:px-12">
+            <FirstFeatures
+              header="Design Sprint"
+              feature={[
+                {
+                  title: "Research & Competitive Analysis",
+                  src: require("../assets/icons/circle1.png"),
+                  imgClass: "h-12 md:h-16 ",
+                },
+                {
+                  title: "User Surveys & Insights",
+                  src: require("../assets/icons/circle2.png"),
+                  imgClass: "h-12 md:h-16 ",
+                },
+                {
+                  title: "User Pain Points",
+                  // content: "What's a deductible?",
+                  src: require("../assets/icons/circle3.png"),
+                  imgClass: "h-12 md:h-16 ",
+                },
+                {
+                  title: "Wireframe & Prototype",
+                  // content: "What's a deductible?",
+                  src: require("../assets/icons/circle4.png"),
+                  imgClass: "h-12 md:h-16 ",
+                },
+                {
+                  title: "User Testing",
+                  // content: "What's a deductible?",
+                  src: require("../assets/icons/circle5.png"),
+                  imgClass: "h-12 md:h-16 ",
+                },
+                {
+                  title: "New UI & Solutions",
+                  // content: "What's a deductible?",
+                  src: require("../assets/icons/circle6.png"),
+                  imgClass: "h-12 md:h-16 ",
+                },
+              ]}
+            />
           </div>
         </section>
 
@@ -149,7 +212,7 @@ function Posts() {
               following ways.{" "}
             </p>
 
-            <ul className="max-w-96 md:my-12  text-xl list-inside list-disc grid justify-center text-teal-600">
+            <ul className="max-w-96 my-6 md:my-12 md:text-xl list-inside list-disc grid justify-center leading-loose md:leaing-normal text-teal-600">
               <li>
                 {" "}
                 Reading about healthcare, health insurance, and finding
@@ -168,19 +231,23 @@ function Posts() {
             </ul>
           </div>
         </section>
-        <section className="post-prototype my-12">
+        <section className="post-problem my-12">
           <div className="text-center my-2 md:my-12">
             <h2>Early Prototype</h2>
           </div>
           <div>
             <p className="max-w-lg mx-auto">
-              This problem persists Nationwide amongst over 40+ Americans --
-              access to reliable healthcare. Individuals who do have access to
-              health coverage are often met with the challenge of navigating
-              their way to a doctor that accepts their insurance. Additionally,
-              many people share concenrs of high deductibles and out-of-pocket
-              cotst.
+              The first iteration of screens was simplistic, designed with the
+              expectations that significant changes would be needed. My approach
+              was to test early because real human feedback was incredibly
+              important to myself (professionally) and for the success of this
+              product.
             </p>
+            <img
+              className="mx-auto md:w-120 my-6 md:my-20 rounded"
+              src={require("../assets/images/early-prototype.png")}
+              alt=""
+            />
           </div>
         </section>
 
@@ -197,7 +264,7 @@ function Posts() {
               to do the following:
             </p>
 
-            <ul className="max-w-96 md:my-12  text-xl list-inside list-disc grid justify-center text-teal-600">
+            <ul className="max-w-96 my-6 md:my-12  text-xl list-inside list-disc grid justify-center text-teal-600">
               <li> Enter provided insurance details </li>
               <li> Express their first impression of the visuals. </li>
               <li>
@@ -214,23 +281,28 @@ function Posts() {
         </section>
         {/* post-banner that displays themes  */}
         <section className="post-intro">
-          <div className="banner bg-gray-300 h-56 md:h-108 full-width grid content-center">
-           
+          <div className="banner bg-gray-300 md:h-108 full-width grid content-center">
             <FirstFeatures
               header="Pain Points"
               feature={[
                 {
                   title: "Costs",
                   content: "Will I have more fees?",
+                  src: require("../assets/icons/costs.png"), 
+              imgClass: "h-12 md:h-16 ",
                 },
 
                 {
                   title: "Providers",
                   content: "Which provider is best for my insurance plan?",
+                  src: require("../assets/icons/provider.png"), 
+              imgClass: "h-12 md:h-16 ",
                 },
                 {
                   title: "Confusion",
                   content: "What's a deductible?",
+                  src: require("../assets/icons/confusion.png"), 
+              imgClass: "h-12 md:h-16 ",
                 },
               ]}
             />
@@ -252,34 +324,31 @@ function Posts() {
           </div>
         </section>
         <section>
-          <div className="feature-content md:flex md:items-center md:h-108">
-            <div className="">
-              <img
-                src={require("../assets/images/visual-graph.png")}
-                alt=""
-                className="md:w-96 xl:w-120"
-              />
-            </div>
-            <div className="mt-4 md:mt-0 md:pl-16 md:max-w-xs leading-tight text-center md:text-left px-5">
-              <h2 className="text-teal-600">Visual Graph</h2>
+          <div className="feature-content md:flex md:items-center md:h-108 my-20">
+            <div className="mt-4 md:mt-0 md:pl-16 md:max-w-xs leading-tight md:text-left px-5 grid order-first">
+              <h2 className="text-teal-600 text-center md:text-left">
+                Visual Graph
+              </h2>
               <p className="font-light mt-4 md:mt-6">
                 Right away the user can see how much they have spent towards
                 their deductible and an explanation of what that means.
               </p>
             </div>
+            <div className="md:order-last">
+              <img
+                src={require("../assets/images/visual-graph.png")}
+                alt=""
+                className="md:w-96 xl:w-120 rounded my-12 md:my-0"
+              />
+            </div>
           </div>
         </section>
         <section>
-          <div className="feature-content md:flex md:items-center md:h-108">
-            <div className="sm:order-first md:order-2">
-              <img
-                src={require("../assets/images/digital-insurance.png")}
-                alt=""
-                className="md:w-96 xl:w-120"
-              />
-            </div>
-            <div className="mt-4 md:mt-0 md:mr-12 md:max-w-xs leading-tight text-center md:text-left px-5">
-              <h2 className="text-teal-600 md:mr-3">Digital Insurance Card</h2>
+          <div className="feature-content md:flex md:items-center md:h-108 my-20">
+            <div className="mt-4 md:mt-0 md:mr-12 md:max-w-xs leading-tight md:text-left px-5 grid order-first">
+              <h2 className="text-teal-600 md:mr-3 text-center md:text-left">
+                Digital Insurance Card
+              </h2>
               <p className="font-light mt-4 md:mt-6">
                 Cellphones hold most of our important information and we tend to
                 keep our device close, so why not have access to your digital
@@ -287,19 +356,19 @@ function Posts() {
                 need (i.e., personal details, financials, provider details).
               </p>
             </div>
+            <div className=" md:order-first">
+              <img
+                src={require("../assets/images/digital-insurance.png")}
+                alt=""
+                className="md:w-96 xl:w-120 rounded my-12 md:my-0"
+              />
+            </div>
           </div>
         </section>
         <section>
-          <div className="feature-content md:flex md:items-center md:h-108">
-            <div className="">
-              <img
-                src={require("../assets/images/search-func.png")}
-                alt=""
-                className="md:w-96 xl:w-120"
-              />
-            </div>
-            <div className="mt-4 md:mt-0 md:pl-16 md:max-w-xs leading-tight text-center md:text-left px-5">
-              <h2 className="text-teal-600 ">Search</h2>
+          <div className="feature-content md:flex md:items-center md:h-108 my-20">
+            <div className="mt-4 md:mt-0 md:pl-16 md:max-w-xs leading-tight md:text-left px-5 grid order-first">
+              <h2 className="text-teal-600 text-center md:text-left">Search</h2>
               <p className="font-light mt-4 md:mt-6">
                 The search functionality was designed to be quick by adding a
                 drop-down and search bar. Our users can also search by clicking
@@ -307,25 +376,34 @@ function Posts() {
                 relevance to location and insurance coverage.
               </p>
             </div>
+            <div className="md:order-last">
+              <img
+                src={require("../assets/images/search-func.png")}
+                alt=""
+                className="md:w-96 xl:w-120 rounded my-12 md:my-0"
+              />
+            </div>
           </div>
         </section>
         <section>
-          <div className="feature-content md:flex md:items-center  md:h-108">
-            <div className="sm:order-first md:order-2">
-              <img
-                src={require("../assets/images/cost-estimator.png")}
-                alt=""
-                className="md:w-96 xl:w-120"
-              />
-            </div>
-            <div className="mt-4 md:mt-0 md:mr-12 md:max-w-xs leading-tight text-center md:text-left px-5">
-              <h2 className="text-teal-600 md:mr-3">Cost Estimator</h2>
+          <div className="feature-content md:flex md:items-center md:h-108 my-20">
+            <div className="mt-4 md:mt-0 md:mr-12 md:max-w-xs leading-tight md:text-left px-5 grid order-first">
+              <h2 className="text-teal-600 md:mr-3 text-center md:text-left">
+                Cost Estimator
+              </h2>
               <p className="font-light mt-4 md:mt-6">
                 The most prominent feature is the ability to estimate (only an
                 estimate) the cost of the doctor visit. This feature speaks to
                 the user’s desire to not only know ahead but to plan their
-                expenses just as they would in other shopping experiences. r
+                expenses just as they would in other shopping experiences.
               </p>
+            </div>
+            <div className="md:order-first ">
+              <img
+                src={require("../assets/images/cost-estimator.png")}
+                alt=""
+                className="md:w-96 xl:w-120 rounded my-12 md:my-0"
+              />
             </div>
           </div>
         </section>
@@ -341,11 +419,11 @@ function Posts() {
               Multiple APIs were required to create the functionality of the
               design. Currently, there are some roadblocks.{" "}
             </p>
-            <ul className="max-w-96 md:my-12  text-xl list-inside list-disc grid justify-center text-teal-600">
+            <ul className="max-w-96 my-6 md:my-12  text-xl list-inside list-disc grid justify-center text-teal-600">
               <li>
                 {" "}
-                There are hundreds of insurance carriers with varying plan types and data structures
-
+                There are hundreds of insurance carriers with varying plan types
+                and data structures
               </li>
               <li>
                 Accurate cost estimates require cost insight from the provider{" "}
@@ -371,21 +449,27 @@ function Posts() {
             <h2>Personal Roadblock</h2>
           </div>
           <div>
-            <p className="max-w-lg mx-auto">
+            <p className="max-w-lg mx-auto my-3">
               As an empath, healer, and designer of solutions, I am simply not
               satisfied with the current iteration of the product. I’m glad we
               could add features that assist people in their time of need and in
               some cases most vulnerable moments. However, there is more to be
-              achieved here. Displaying visual graphs of a user’s health
-              expenditures is not the same as Credit Karma showing increased
-              credit scores or gaining membership points for free collectibles
-              at your favorite department store. An increase in health spending
-              often correlates with an increase in health challenges. Where is
-              the validation and delightfulness in that? Personally and
-              professionally, I believe there’s more value in showing users how
-              to “milk” their insurance for all its got. Examples:{" "}
+              achieved here.{" "}
             </p>
-             <ol className="max-w-96 md:my-12  text-xl list-inside list-decimal grid justify-center">
+            <p className="max-w-lg mx-auto my-3">
+              Displaying visual graphs of a user’s health expenditures is not
+              the same as Credit Karma showing increased credit scores or
+              gaining membership points for free collectibles at your favorite
+              department store. An increase in health spending often correlates
+              with an increase in health challenges.{" "}
+            </p>
+            <p className="max-w-lg mx-auto my-3">
+              Where is the validation and delightfulness in that? Personally and
+              professionally, I believe there’s more value in showing users how
+              to “milk” their insurance for all its got. Examples:
+            </p>
+
+            <ol className="max-w-96 my-6 md:my-12 text-xl list-inside list-decimal grid justify-center text-teal-600">
               <li>
                 {" "}
                 Inform users of all the free services that come packaged in

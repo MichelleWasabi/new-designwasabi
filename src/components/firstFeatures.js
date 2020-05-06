@@ -10,12 +10,12 @@ feature,
 <section className="featureWrapper text-center my-12 md:my-48 ">
     <h2 className="header-text">{children ? children : header}</h2>
     <div  className=" md:flex md:mt-24 text-center">
-      {feature.map(({title, content}) => (
-    <div key={title} className="feature-one md:w-1/3 px-16">
+      {feature.map(({title, content, src, imgClass}) => (
+    <div key={title} className="feature-one md:w-1/3 my-6 md:my-0">
       <div  className="feature-icon flex justify-center ">
           <img
-            className="h-24 "
-            src={require("../assets/images/icon-booking-works.png")}
+            className={imgClass}
+            src={src}
             alt=""
           />
         </div>

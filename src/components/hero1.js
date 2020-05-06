@@ -23,12 +23,6 @@ export default () => (
       <p className="text-lg md:text-2xl mt-3">Services made for human needs</p>
       <div className="pt-6">
         <BtnLink title="Start Living" href="./#landing-features" />
-        {/* <a
-          href="/#landing-features"
-          className="btn bg-gray-900 hover:bg-pink-200 text-white hover:text-black font-bold py-2 px-16 rounded"
-        >
-          Start Living
-        </a> */}
       </div>
     </section>
   </div>

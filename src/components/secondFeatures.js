@@ -68,6 +68,10 @@ export default () => (
             <li>Lo-fi to hi-fi wireframes + prototypes</li>
             <li>HTML + CSS + React</li>
           </ul>
+           <BtnLink
+            title="See Portfolio"
+            href="#/posts"
+          />
         </div>
       </div>
        <div className="spacer h-20"></div>
