@@ -34,7 +34,7 @@ function Posts() {
       </div>
       <section>
         <div class="back-btn mx-3 md:mx-6">
-        <a class="text-teal-600 mx-12 text-xl " href="javascript:history.back()"> <img src={require("../assets/icons/back-arrow.png")} className="w-8 h-full" alt=""/> Back</a>
+        <a className="text-teal-600 mx-12 text-xl " href="javascript:history.back()"> <img src={require("../assets/icons/back-arrow.png")} className="w-8 h-full" alt=""/> Back</a>
       </div>
       </section>
 
@@ -345,7 +345,7 @@ function Posts() {
         </section>
         <section>
           <div className="feature-content md:flex md:items-center md:h-108 my-20">
-            <div className="mt-4 md:mt-0 md:mr-12 md:max-w-xs leading-tight md:text-left px-5 grid order-first">
+            <div className="mt-4 md:mt-0 md:mr-12 md:max-w-xs leading-tight md:text-left px-5 grid order-first md:order-2">
               <h2 className="text-teal-600 md:mr-3 text-center md:text-left">
                 Digital Insurance Card
               </h2>
@@ -356,7 +356,7 @@ function Posts() {
                 need (i.e., personal details, financials, provider details).
               </p>
             </div>
-            <div className=" md:order-first">
+            <div className="md:order-1">
               <img
                 src={require("../assets/images/digital-insurance.png")}
                 alt=""
@@ -387,7 +387,7 @@ function Posts() {
         </section>
         <section>
           <div className="feature-content md:flex md:items-center md:h-108 my-20">
-            <div className="mt-4 md:mt-0 md:mr-12 md:max-w-xs leading-tight md:text-left px-5 grid order-first">
+            <div className="mt-4 md:mt-0 md:mr-12 md:max-w-xs leading-tight md:text-left px-5 grid order-first md:order-2">
               <h2 className="text-teal-600 md:mr-3 text-center md:text-left">
                 Cost Estimator
               </h2>
