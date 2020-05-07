@@ -70,7 +70,7 @@ export default () => (
           </ul>
            <BtnLink
             title="See Portfolio"
-            href="/posts"
+            href="/design"
           />
         </div>
       </div>

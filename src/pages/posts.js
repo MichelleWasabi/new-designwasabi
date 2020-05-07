@@ -33,7 +33,7 @@ function Posts() {
         </section>
       </div>
       <section>
-        <div class="back-btn mx-3 md:mx-6">
+        <div className="back-btn mx-3 md:mx-6">
         <a className="text-teal-600 mx-12 text-xl " href="javascript:history.back()"> <img src={require("../assets/icons/back-arrow.png")} className="w-8 h-full" alt=""/> Back</a>
       </div>
       </section>

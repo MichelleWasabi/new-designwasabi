@@ -12,7 +12,7 @@ let ImgTiles = ({
             <h2 className="text-xl md:text-4xl ">Featured Projects</h2>
             {/* <p className="text-base md:text-xl">my main picks</p> */}
           </div>
-          <div className="grid md:grid-cols-1 gap-8">
+          <div className="grid md:grid-cols-1 gap-20 md:gap-32">
             {tiles.map(({header, subtext, tagleft, tagright, src}) => (
               <a key={header} className="relative mx-auto block">
                 <div className="content md:rounded opacity-0 absolute text-white h-full w-full text-center items-center flex justify-center flex-col transition-all duration-1000 ease-in-out hover:opacity-100  ">       
