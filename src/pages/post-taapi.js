@@ -21,10 +21,10 @@ function PostTaapi() {
           <img
             src={require("../assets/images/taapi-hero.jpg")}
             alt=""
-            className="h-screen w-full"
+            className="h-108 md:h-screen w-full"
           />
         </div>
-        <section className="hero-content absolute z-20 mx-4 md:mx-10 leading-tight ">
+        <section className="hero-content absolute z-20 leading-tight ">
           <p className=" text-4xl opacity-80">a website launch</p>
           <h1 className="hero-font-size tracking-tighter ">TAAPI</h1>
           <div className="pt-6 md:mx-0 ">
