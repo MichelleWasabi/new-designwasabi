@@ -7,7 +7,7 @@ export default () => (
     <div className="design-hero flex relative items-center">
       <div className="overlay dkGradient absolute top-0 left-0 h-screen md:h-full w-full"></div>
       <video
-       poster={require("../assets/images/beach3.jpg")}
+       poster={require("../assets/images/beach.jpg")}
         autoPlay
         muted
         loop

@@ -6,11 +6,11 @@ import BtnCenter from "../components/BtnCenter";
 
 import LastCTA from "../components/lastCTA";
 
-function Posts() {
+function PostTaapi() {
   return (
     <Layout>
       <SEO
-        keywords={[`uxdesign`, `product design`, `portfolio`]}
+        keywords={[`uxdesign`, `react`, `javascript`, `product design`, `developer`]}
         title="Project Details Page"
       />
 
@@ -19,14 +19,14 @@ function Posts() {
         <div>
           {/* <div className="overlay bg-gray-800 absolute top-0 left-0 h-full w-full opacity-50 z-10"></div> */}
           <img
-            src="https://images.unsplash.com/photo-1576502202167-791eca35a78d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1520&q=80"
+            src={require("../assets/images/taapi-hero.jpg")}
             alt=""
             className="h-screen w-full"
           />
         </div>
-        <section className="hero-content absolute text-white z-20 mx-4 md:mx-10 leading-tight ">
-          <p className=" text-4xl opacity-80">a case study</p>
-          <h1 className="hero-font-size tracking-tighter ">Wellness App</h1>
+        <section className="hero-content absolute z-20 mx-4 md:mx-10 leading-tight ">
+          <p className=" text-4xl opacity-80">a website launch</p>
+          <h1 className="hero-font-size tracking-tighter ">TAAPI</h1>
           <div className="pt-6 md:mx-0 ">
             <BtnCenter title="Learn More" href="#post-features" />
           </div>
@@ -46,19 +46,19 @@ function Posts() {
           feature={[
             {
               title: "My Role ",
-              content: "Lead Designer and Researcher",
+              content: "Front-end Develop and Designer",
               src: require("../assets/icons/myrole.png"),
               imgClass: "h-12 md:h-16",
             },
             {
               title: "Project Length",
-              content: "Six (6) Months",
+              content: "Eight (8) Months",
               src: require("../assets/icons/duration.png"),
               imgClass: "h-12 md:h-16 ",
             },
             {
               title: "# of Iterations",
-              content: "Three (3) Iterations",
+              content: "Two (2) Iterations",
               src: require("../assets/icons/iterations.png"),
               imgClass: "h-12 md:h-16",
             },
@@ -498,4 +498,5 @@ function Posts() {
   );
 }
 
-export default Posts;
+export default PostTaapi;
+
