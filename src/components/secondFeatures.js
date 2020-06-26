@@ -74,7 +74,7 @@ export default () => (
           />
         </div>
       </div>
-       <div className="spacer h-20"></div>
+       <div className="spacer md:h-20"></div>
       <div className="byDay">
         <ByDay title1="by night" title2="Licensed Psychologist" moon={<MoonDance/>} />
       </div>

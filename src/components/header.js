@@ -53,8 +53,8 @@ function Header() {
               title: `about`,
             },
             {
-              route: `/blog`,
-              title: `blog`,
+              route: `/design`,
+              title: `portfolio`,
             },
             {
               route: `/contact`,

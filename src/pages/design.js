@@ -20,6 +20,7 @@ function DesignPage() {
          tagleft: "Product Design",
          tagright: "UX Research",
          src: require("../assets/images/wellness.png"),
+        href: "/post-taapi",
        },
        { 
          header: "TAPPI: Therapist Directory",

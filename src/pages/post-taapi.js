@@ -68,16 +68,11 @@ function PostTaapi() {
         {/* post-problem  */}
         <section className="post-problem my-12">
           <div className="text-center my-2 md:my-12">
-            <h2>We Have a Problem</h2>
+            <h2>Overview</h2>
           </div>
           <div>
             <p className="max-w-lg mx-auto">
-              It’s a nationwide problem that persists for millions of people in
-              this country, affordable + reliable healthcare coverage.
-              Statistics show that many Americans either cannot afford to
-              maintain yearly health insurance or they have a plan that is
-              confusing to understand. These issues leave over 80 million people
-              scratching their heads and ultimately vulnerable to the elements.
+              Therapy for Asian Americans and Pacific Islanders (TAAPI) is 
             </p>
             <img
               className="mx-auto md:w-96 my-6 md:my-20 rounded"
