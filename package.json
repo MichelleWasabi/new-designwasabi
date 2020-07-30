@@ -23,7 +23,10 @@
   "keywords": [
     "michellewiltshire",
     "wellness",
-    "uxdesign"
+    "uxdesign",
+    "black owned",
+    "female owned"
+
   ],
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
