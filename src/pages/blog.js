@@ -8,7 +8,7 @@ function BlogPage() {
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About"
+        title="Blog"
       />
     </Layout>
   );
