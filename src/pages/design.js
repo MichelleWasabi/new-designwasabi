@@ -15,12 +15,12 @@ function DesignPage() {
       <HeroVideo />
      <ImgTiles tiles={[
        {
-         header: "MediXall: Health App",
-         subtext: "designed to improve access to better healthcare",
-         tagleft: "Product Design",
-         tagright: "UX Research",
-         src: require("../assets/images/wellness.png"),
-        href: "/post-taapi",
+        header: "MediXall: Health App",
+        subtext: "designed to improve access to better healthcare",
+        tagleft: "Product Design",
+        tagright: "UX Research",
+        src: require("../assets/images/wellness.png"),
+        href: "/post-wellness",
        },
        { 
          header: "TAPPI: Therapist Directory",
@@ -28,6 +28,8 @@ function DesignPage() {
          tagleft: "React/Front-end",
          tagright: "Visual Design",
          src: require("../assets/images/taapi2.png"),
+         href:"http://www.therapyforasians.com",
+         target: "_blank"
         },
        { 
          header: "4",

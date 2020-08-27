@@ -10,7 +10,7 @@ function PostWellness() {
   return (
     <Layout>
       <SEO
-        keywords={[`uxdesign`, `product design`, `portfolio`]}
+        keywords={[`uxdesign`, `product design`, `portfolio`, `wellness`]}
         title="Project Details Page"
       />
 
@@ -34,7 +34,7 @@ function PostWellness() {
       </div>
       <section>
         <div className="back-btn mx-3 md:mx-6">
-        <a className="text-teal-600 mx-12 text-xl " href="javascript:history.back()"> <img src={require("../assets/icons/back-arrow.png")} className="w-8 h-full" alt=""/> Back</a>
+        <a className="text-teal-600 mx-12 text-xl " href="/design"> <img src={require("../assets/icons/back-arrow.png")} className="w-8 h-full" alt=""/> Back</a>
       </div>
       </section>
 

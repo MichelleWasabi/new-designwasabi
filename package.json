@@ -6,7 +6,6 @@
   "author": "Michelle Wasabi <michelle@designwasabi.com>",
   "dependencies": {
     "gatsby": "2.19.43",
-    "gatsby-cli": "^2.12.4",
     "gatsby-plugin-manifest": "2.2.47",
     "gatsby-plugin-offline": "3.0.40",
     "gatsby-plugin-postcss": "2.1.21",
@@ -26,7 +25,6 @@
     "uxdesign",
     "black owned",
     "female owned"
-
   ],
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",

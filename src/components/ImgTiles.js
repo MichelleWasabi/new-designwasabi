@@ -13,18 +13,18 @@ let ImgTiles = ({
             {/* <p className="text-base md:text-xl">my main picks</p> */}
           </div>
           <div className="grid md:grid-cols-1 gap-20 md:gap-32">
-            {tiles.map(({header, subtext, tagleft, tagright, src, href}) => (
-              <a key={header} className="relative mx-auto block"  href={href}>
+            {tiles.map(({header, subtext, tagleft, tagright, src, href, target}) => (
+              <a key={header} className="relative mx-auto block"  href={href} target={target}>
                 <div className="content md:rounded opacity-0 absolute text-white h-full w-full text-center items-center flex justify-center flex-col transition-all duration-1000 ease-in-out hover:opacity-100  ">       
                   <div className="details absolute w-full fadeIn-bottom opacity-0 transition-all duration-1000 ease-in-out">
                     <h3 className="title uppercase">{header}</h3>
                     <p className="text">{subtext}</p>        
                   </div>
                     <div className="grid grid-cols-1 gap-16 details-link absolute fadeIn-bottom opacity-0 transition-all duration-1000 ease-in-out">                   
-                      <div class="col-start-1">
+                      <div className="col-start-1">
                         <TagOutline>{tagleft}</TagOutline>   
                       </div>
-                      <div class="col-end-7">
+                      <div className="col-end-7">
                          <TagOutline>{tagright}</TagOutline>  
                       </div>                   
                     </div>      
