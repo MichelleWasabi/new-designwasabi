@@ -13,7 +13,7 @@
     "gatsby-plugin-react-helmet": "3.1.23",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "2.4.12",
-    "gsap": "^3.2.6",
+    "gsap": "^3.6.0",
     "prop-types": "15.7.2",
     "react": "16.13.0",
     "react-dom": "16.13.0",
